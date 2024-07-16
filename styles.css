@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.5s;
+}
+
+body.light-theme {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+body.dark-theme {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+.game-container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 400px;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+body.dark-theme .game-container {
+    background-color: #444;
+    color: #f0f0f0;
+}
+
+.choices {
+    margin-bottom: 20px;
+}
+
+.choice {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.choice img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.2s;
+}
+
+.choice img:hover {
+    transform: scale(1.2);
+}
+
+.score, .result, .history {
+    margin-bottom: 20px;
+}
+
+.result p, .score p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.history {
+    text-align: left;
+}
+
+.history ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.history li {
+    background-color: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+body.dark-theme .history li {
+    background-color: #555;
+}
+
+.reset, .theme-toggle {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.reset {
+    background-color: #ff6666;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.theme-toggle {
+    background-color: #6666ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
